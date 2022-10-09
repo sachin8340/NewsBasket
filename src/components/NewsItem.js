@@ -1,6 +1,6 @@
 import React from 'react';
 import './NewsItem.css';
-import './VanillaTilt.js';
+
 
 const NewsItem = (props) => {
 
@@ -8,7 +8,7 @@ const NewsItem = (props) => {
     return (
 
         <div className="my-3">
-            <div className="card cardbg" data-tilt>
+            <div className="card cardbg">
 
                 <div style={{
                     display: 'flex',

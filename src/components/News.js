@@ -37,10 +37,14 @@ const News = (props) => {
 
     }
 
+
     useEffect(() => {
+
         document.title = `${capitalizeFirstLetter(props.category)} - NewsBasket`;
+
         updateNews();
     }, [])
+
 
     // const handlePrevClick = async () => {
     //     setPage(page-1);
@@ -67,7 +71,7 @@ const News = (props) => {
             <h1 className="text-center" style={{ margin: '55px 0px', marginTop: '55px' }}>Today's Top {capitalizeFirstLetter(props.category)} Headlines</h1>
             {loading && <Spinner />}
             <InfiniteScroll
-                dataLength={articles.length}
+                dataLength={articles?.length}
                 next={fetchMoreData}
                 hasMore={articles.length !== totalResults}
                 loader={<Spinner />}
