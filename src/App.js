@@ -21,6 +21,7 @@ const App = () => {
     <div className='backg'>
       <Router>
         <NavBar />
+
         <LoadingBar
           height={3}
           color='#f11946'
